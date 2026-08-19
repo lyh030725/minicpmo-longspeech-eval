@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.DS_Store
+
+# Benchmark assets/results
+data/metadata/*.jsonl
+results/*.jsonl
+results/*.json
+logs/
+
+# Hugging Face / model cache
+.cache/
+*.lock
