@@ -28,7 +28,13 @@ cat <<'ENV_HINT'
 [setup] Recommended environment variables:
   export HF_HOME=/workspace/.cache/huggingface
   export HUGGINGFACE_HUB_CACHE=/workspace/.cache/huggingface/hub
-  export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+  export PYTORCH_ALLOC_CONF=expandable_segments:True
+
+Note: PyTorch 2.9 deprecates PYTORCH_CUDA_ALLOC_CONF in favor of PYTORCH_ALLOC_CONF.
+
+Hardware note for native BF16 full-audio evaluation:
+  MiniCPM-o 4.5's official PyTorch deployment guidance requires at least 28 GB VRAM.
+  For ~10-minute LongSpeech samples, 40/48 GB+ is the safer choice.
 
 Optional for gated/private mirrors:
   export HF_TOKEN=...
