@@ -1,0 +1,16 @@
+# torch/torchaudio are provided by the requested RunPod image and pinned via constraints-runpod.txt.
+transformers==4.51.0
+accelerate==1.12.0
+safetensors>=0.7.0
+minicpmo-utils[all]==1.0.6
+huggingface_hub>=0.30.0
+openai>=1.100.0,<3
+hf_xet>=1.1.0
+numpy>=2.2.0,<3
+scipy>=1.13
+soundfile>=0.12.1
+jiwer>=3.1.0
+sacrebleu>=2.5.1
+rouge-score>=0.1.2
+tqdm>=4.67
+pytest>=9.0
